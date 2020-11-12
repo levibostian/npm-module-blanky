@@ -1,13 +1,13 @@
 {
     "tagFormat": "${version}",
     "plugins": [
+        ["@semantic-release/exec", {
+            "verifyConditionsCmd": "npm run build && npm run docs"
+        }],
         "@semantic-release/commit-analyzer", 
         "@semantic-release/release-notes-generator", 
         ["@semantic-release/changelog", {
             "changelogFile": "CHANGELOG.md"
-        }],
-        ["@semantic-release/exec", {
-            "publishCmd": "npm run build"
         }],
         ["@semantic-release/npm", {
             "pkgRoot": "dist"

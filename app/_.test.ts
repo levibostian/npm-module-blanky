@@ -1,16 +1,15 @@
-
 /**
  * Global jest setup/teardown functions
  */
-beforeAll(async() => {
+beforeAll(async () => {
   // do setup here
 })
-beforeEach(async() => {
+beforeEach(async () => {
   // before each test
 })
-afterAll(async() => {
+afterAll(async () => {
   // do teardown here
 })
-afterEach(async() => {
-  // after each 
+afterEach(async () => {
+  // after each
 })
