@@ -6,6 +6,9 @@
         ["@semantic-release/changelog", {
             "changelogFile": "CHANGELOG.md"
         }],
+        ["@semantic-release/exec", {
+            "publishCmd": "npm run build"
+        }],
         ["@semantic-release/npm", {
             "pkgRoot": "dist"
         }],
