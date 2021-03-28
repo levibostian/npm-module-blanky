@@ -13,12 +13,14 @@ Opinionated boilerplate used to make and deploy npm modules.
 - Contain configuration files to setup all tools I tend to use in my development flow.
 - Clone, rename some files, and get developing!
 - Start with zero dependencies. I try my best to keep all npm modules as slim as possible.
+- Setup with continuous delivery to npmjs.com.
 
 # Getting started
 
 - Enable GitHub Actions for your repository.
 - If you have not done so already, create a GitHub account for bot purposes.
 - Add your bot account in the repository `/settings/access`.
+- Project is setup for public publishing by default. If you would like to make your module private, edit `publishConfig` in `package.json`.
 - Create secret `BOT_PUSH_TOKEN` with key being a GitHub personal access token with push permission so the bot can push to the repository (the bot will be making git tags and releases on repository).
 
 ## Contributors
