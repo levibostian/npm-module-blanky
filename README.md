@@ -26,6 +26,7 @@ Opinionated boilerplate used to make and deploy npm modules.
 - Create secrets in GitHub settings:
   - `BOT_PUSH_TOKEN` with key being a GitHub personal access token with push permission so the bot can push to the repository (the bot will be making git tags and releases on repository).
   - `CODECOV_TOKEN` with upload token for CodeCov project to upload test coverage report to codecov.
+  - `NPM_TOKEN` token to push npm module to your npm account.
 - Edit the codecov badge at the top of this file. Find the token for the badge at `https://app.codecov.io/gh/<github-username>/<name-repo>/settings/badge`
 - Project is setup for public publishing by default. If you would like to make your module private, edit `publishConfig` in `package.json`.
 - Delete `CHANGELOG.md` to reset it.
