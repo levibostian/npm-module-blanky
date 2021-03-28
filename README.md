@@ -14,6 +14,7 @@ Opinionated boilerplate used to make and deploy npm modules.
 - Clone, rename some files, and get developing!
 - Start with zero dependencies. I try my best to keep all npm modules as slim as possible.
 - Setup with continuous delivery to npmjs.com.
+- Publish source maps and Typescript type declarations.
 
 # Getting started
 

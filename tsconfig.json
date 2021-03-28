@@ -1,5 +1,5 @@
 {
-  "extends": "@levibostian/tsconfigs/node14/tsconfig.json",
+  "extends": "@levibostian/tsconfigs/node14-npm/tsconfig.json",
   "compilerOptions": {
     "outDir": "dist",
     "paths": {
