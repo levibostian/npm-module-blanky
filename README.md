@@ -4,6 +4,8 @@ Latest (recommended) [![npm latest version](https://img.shields.io/npm/v/levibos
 Beta: [![npm beta version](https://img.shields.io/npm/v/levibostian/npm-module-blanky/beta.svg)][npm]
 Alpha: [![npm alpha version](https://img.shields.io/npm/v/levibostian/npm-module-blanky/alpha.svg)][npm]
 
+[![codecov](https://codecov.io/gh/levibostian/npm-module-blanky/branch/main/graph/badge.svg?token=XXXXXXX)](https://codecov.io/gh/levibostian/npm-module-blanky)
+
 # npm-module-blanky
 
 Opinionated boilerplate used to make and deploy npm modules.
@@ -21,8 +23,12 @@ Opinionated boilerplate used to make and deploy npm modules.
 - Enable GitHub Actions for your repository.
 - If you have not done so already, create a GitHub account for bot purposes.
 - Add your bot account in the repository `/settings/access`.
+- Create secrets in GitHub settings:
+  - `BOT_PUSH_TOKEN` with key being a GitHub personal access token with push permission so the bot can push to the repository (the bot will be making git tags and releases on repository).
+  - `CODECOV_TOKEN` with upload token for CodeCov project to upload test coverage report to codecov.
+- Edit the codecov badge at the top of this file. Find the token for the badge at `https://app.codecov.io/gh/<github-username>/<name-repo>/settings/badge`
 - Project is setup for public publishing by default. If you would like to make your module private, edit `publishConfig` in `package.json`.
-- Create secret `BOT_PUSH_TOKEN` with key being a GitHub personal access token with push permission so the bot can push to the repository (the bot will be making git tags and releases on repository).
+- Delete `CHANGELOG.md` to reset it.
 
 ## Contributors
 
