@@ -9,8 +9,6 @@ on:
 jobs:
   deploy:
     name: Deploy to npm
-    # skip if '[skip ci]' exists in commit message 
-    if: ${{ !contains(format('{0} {1}', github.event.head_commit.message, github.event.pull_request.title), '[skip ci]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
