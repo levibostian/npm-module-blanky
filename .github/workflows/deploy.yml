@@ -38,6 +38,6 @@ jobs:
             @semantic-release/git@9
             @semantic-release/github@7
         env:
-          GITHUB_TOKEN: ${{ secrets.REPO_PUSH_TOKEN }}        
+          GITHUB_TOKEN: ${{ secrets.BOT_PUSH_TOKEN }}        
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }} 
           
