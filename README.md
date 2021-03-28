@@ -23,6 +23,7 @@ Opinionated boilerplate used to make and deploy npm modules.
 - Add your bot account in the repository `/settings/access`.
 - Project is setup for public publishing by default. If you would like to make your module private, edit `publishConfig` in `package.json`.
 - Create secret `BOT_PUSH_TOKEN` with key being a GitHub personal access token with push permission so the bot can push to the repository (the bot will be making git tags and releases on repository).
+- Delete `CHANGELOG.md` to reset it.
 
 ## Contributors
 
